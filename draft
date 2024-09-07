@@ -1,0 +1,27 @@
+; Infinite loop
+Loop
+{
+    ; Activate
+/*  SetTitleMatchMode, 2
+    IfWinExist, Power Automate
+    {
+        WinActivate
+        WinMaximize
+    }
+    else
+    {
+        MsgBox, gas
+        Exit ; Exit the script if the window is not found
+    }
+
+*/
+
+
+    ; Send the F4 key
+    Send {F4}
+
+    ; Sleep for 2 hours (7,200,000 milliseconds) before sending F4 again
+    Sleep, 150000
+}
+
+; fin
